@@ -1,6 +1,6 @@
 ---
 name: avilla-driven-development
-description: Executa o fluxo completo de desenvolvimento orientado a documentação: cria PRD, Tech Spec, lista de tarefas, implementa tasks, revisa e executa QA. Use quando for iniciar uma nova funcionalidade, documentar requisitos, gerar especificação técnica, detalhar ou implementar tarefas, revisar implementações ou executar testes de qualidade. Não use para debugging genérico, refatoração sem contexto de task, ou tarefas fora do ciclo de desenvolvimento de funcionalidades.
+description: "Executa o fluxo completo de desenvolvimento orientado a documentação: cria PRD, Tech Spec, lista de tarefas, implementa tasks, revisa e executa QA. Use quando for iniciar uma nova funcionalidade, documentar requisitos, gerar especificação técnica, detalhar ou implementar tarefas, revisar implementações ou executar testes de qualidade. Não use para debugging genérico, refatoração sem contexto de task, ou tarefas fora do ciclo de desenvolvimento de funcionalidades."
 ---
 
 # Avilla Driven Development

@@ -1,6 +1,6 @@
 ---
 name: criar-card-jira
-description: Cria cards JIRA completos e prontos para refinamento, seguindo boas práticas ágeis: histórias de usuário no formato padrão, contexto As-Is/To-Be, regras de negócio numeradas e cenários BDD em Gherkin. Use quando for criar histórias, tasks, bugs ou melhorias para o JIRA. Não use para criar documentação técnica, especificações de arquitetura ou PRDs — para isso use a skill avilla-driven-development.
+description: "Cria cards JIRA completos e prontos para refinamento, seguindo boas práticas ágeis: histórias de usuário no formato padrão, contexto As-Is/To-Be, regras de negócio numeradas e cenários BDD em Gherkin. Use quando for criar histórias, tasks, bugs ou melhorias para o JIRA. Não use para criar documentação técnica, especificações de arquitetura ou PRDs — para isso use a skill avilla-driven-development."
 ---
 
 # Criar Card JIRA

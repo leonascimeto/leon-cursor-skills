@@ -30,12 +30,21 @@ interface SkillInfo {
 function loadSkillInfo(skillsRoot: string, folder: string): SkillInfo {
   const skillPath = path.join(skillsRoot, folder, "SKILL.md");
   const raw = fs.readFileSync(skillPath, "utf8");
-  const { data } = matter(raw);
-  const name =
-    typeof data.name === "string" && data.name.length > 0 ? data.name : folder;
-  const description =
-    typeof data.description === "string" ? data.description : "";
-  return { folder, name, description };
+  try {
+    const { data } = matter(raw);
+    const name =
+      typeof data.name === "string" && data.name.length > 0 ? data.name : folder;
+    const description =
+      typeof data.description === "string" ? data.description : "";
+    return { folder, name, description };
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.warn(
+      `[skills-catalog] Frontmatter YAML inválido em ${skillPath}\n  ${msg}\n` +
+        `  Dica: use aspas em description se houver texto no formato "algo: outro".`,
+    );
+    return { folder, name: folder, description: "" };
+  }
 }
 
 function escapeRegExp(s: string): string {
