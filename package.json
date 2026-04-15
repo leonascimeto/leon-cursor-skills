@@ -1,0 +1,40 @@
+{
+  "name": "skills-catalog",
+  "version": "0.1.0",
+  "description": "Interactive CLI to install Cursor skills from the catalog into your project",
+  "type": "module",
+  "bin": {
+    "skills-catalog": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    ".cursor"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cursor",
+    "skills",
+    "cli",
+    "agent"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "fs-extra": "^11.3.0",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.3",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
